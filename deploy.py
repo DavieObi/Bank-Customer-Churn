@@ -15,7 +15,7 @@ def safe_encode(encoder, value, fallback_value=-1):
     except ValueError:
         return fallback_value
 
-# Function to make predictions
+#  Function to make predictions
 def predict_churn(CreditScore, Geography, Gender, Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary):
     input_data = [[CreditScore, Geography, Gender, Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary]]
     
